@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Dólares "
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:inputType="numberDecimal">
+        <requestFocus/>
+        </EditText>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Euros"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+        <RadioButton
+            android:id="@+id/rbEuroAdolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Euro a Dólares" />
+
+        <RadioButton
+            android:id="@+id/rbDolarAeuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dólares a Euro" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambio a ..."
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/etCambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnConvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
+    </LinearLayout>
+</RelativeLayout>
